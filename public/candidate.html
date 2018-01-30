@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="./css/bootstrap.min.css" />
+	</head>
+	<body>
+		
+		<div id="nav"></div>
+		
+		
+		<div id="content" class="container">
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addCandidateModel">新增候选人</button>
+			<table class="table table-striped" style="margin-top:20px;">
+				<thead>
+					<tr>
+						<th>序号</th>
+						<th>姓名</th>
+						<th>年龄</th>
+						<th>期望薪资</th>
+						<th>期望工作地点</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody id="tbody"></tbody>
+			</table>
+			
+			<nav aria-label="Page navigation">
+			  <ul class="pagination" id="listBox">
+			  </ul>
+			</nav>
+		</div>
+		
+		
+		
+		<script src="./js/jquery.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<script src="./js/common/header/login.js"></script>
+		<script src="./js/common/header/register.js"></script>
+		<script src="./js/common/header/header.js"></script>
+		<script src="./js/pages/candidate/candidateSelect.js"></script>
+		<script src="./js/pages/candidate/candidateList.js"></script>
+		<script src="./js/pages/candidate/addCandidate.js"></script>
+		<script src="./js/pages/candidate/page.js"></script>
+		<script>
+			var page = new Page();
+		</script>
+	</body>
+</html>
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="./css/bootstrap.min.css" />
+	</head>
+	<body>
+		
+		<div id="nav"></div>
+		
+		
+		<div id="content" class="container">
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addPositionModel">新增职位</button>
+			<table class="table table-striped" style="margin-top:20px;">
+				<thead>
+					<tr>
+						<th>序号</th>
+						<th>logo</th>
+						<th>职位名称</th>
+						<th>公司</th>
+						<th>薪资范围</th>
+						<th>查询候选人</th>
+						<th>工作地点</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody id="tbody"></tbody>
+			</table>
+			<ul class="list-group" id="candidateBox" style="position:absolute;top:51px;right:0;">
+			</ul>
+			<nav aria-label="Page navigation">
+			  <ul class="pagination" id="listBox">
+			  </ul>
+			</nav>
+		</div>
+		
+		
+		
+		<script src="./js/jquery.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<script src="./js/common/header/login.js"></script>
+		<script src="./js/common/header/register.js"></script>
+		<script src="./js/common/header/header.js"></script>
+		<script src="./js/pages/list/list.js"></script>
+		<script src="./js/pages/list/tabList.js"></script>
+		<script src="./js/pages/list/addPosition.js"></script>
+		<script src="./js/pages/list/page.js"></script>
+		<script>
+			var page = new Page();
+		</script>
+	</body>
+</html>
+
